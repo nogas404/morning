@@ -1,7 +1,8 @@
 *.csv
-*.png
 *.jpg
-*.jpeg
+covid_stats.py
+tmp.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
