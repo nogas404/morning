@@ -46,7 +46,7 @@ async def main(urls):
 
 
 if __name__=='__main__':
-    urls = get_urls()
+    urls = get_urls('rss-feed.txt')
 
     a = asyncio.run(main(urls))
     print(a)
