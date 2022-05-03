@@ -14,4 +14,4 @@ Hannah Ritchie, Edouard Mathieu, Lucas Rodés-Guirao, Cameron Appel, Charlie Gia
 and i also used some packages, you can find all of them in [requirements.txt](requirements.txt)
 
 #### Per package acknowledgements
-each program may also have some link of some sources, i recommend to check them out cause they are pretty helpful (at least to me)
+each program may also have some link to some sources, I recommend you to check them out, because they are pretty helpful (at least to me)

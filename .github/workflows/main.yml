@@ -6,28 +6,28 @@ on:
   - cron:  "0 4 * * *"
 
 jobs:
-  Main:
-    # OS and timeout
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+ job:
+  # OS and timeout
+  runs-on: ubuntu-latest
+  timeout-minutes: 20
 
-    steps:
-    # few dependencies or something idk
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-    # using pip cache
+  steps:
+  # few dependencies or something idk
+  - uses: actions/checkout@v3
+  - uses: actions/setup-python@v3
+  # using pip cache
     with:
       cache: 'pip'
   
 
-    # installing dependencies
-    - run: pip install -r requirements.txt
-    # converting jupyter notebook to python
-    - run: jupyter nbconvert --to python covid-stats.ipynb
-    # runing main python file (it executes other stuff)
-    - name: Main part
-      env:
-      ENV_SECRET: ${{ secret.SENDER_EMAIL }}
-      ENV_SECRET: ${{ secret.EMAIL_PASSWORD }}
-      ENV_SECRET: ${{ secret.RECIVER_EMAIL }}
-      run: python3 main.py
+  # installing dependencies
+  - run: pip install -r requirements.txt
+  # converting jupyter notebook to python
+  - run: jupyter nbconvert --to python covid-stats.ipynb
+  # runing main python file (it executes other stuff)
+  - name: Main part
+    env:
+      SENDER_EMAIL: ${{ secret.SENDER_EMAIL }}
+      EMAIL_PASSWORD: ${{ secret.EMAIL_PASSWORD }}
+      RECIVER_EMAIL: ${{ secret.RECIVER_EMAIL }}
+    run: python3 main.py
