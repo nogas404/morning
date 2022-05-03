@@ -1,5 +1,5 @@
 *.csv
-*.jpg
+*.jpeg
 covid_stats.py
 tmp.py
 
