@@ -2,15 +2,23 @@
 # docs: https://devdocs.io/python/library/smtplib
 # and big thanks to this guy https://stackoverflow.com/a/58997830
 
-def send_email(text):
+
+def send_email(urls):
     import os
 
     # modify those variables in github actions secrets
     SENDER_EMAIL = os.environ['SENDER_EMAIL']
     SENDER_PASSWORD = os.environ['SENDER_PASSWORD']
     RECIVER_EMAIL = os.environ['RECIVER_EMAIL']
-    
-    
+
+    # making email body
+    print(urls)
+    final_text = ''
+    for x in urls:
+        final_text += f'- {x} \n'
+    print(final_text)
+
+
     from email.message import EmailMessage
     from datetime import date
 
@@ -19,13 +27,12 @@ def send_email(text):
     new_Message['Subject'] = f'Daily Newsletter {date.today().strftime("%d/%m")}'
     new_Message['From'] = SENDER_EMAIL
     new_Message['To'] = RECIVER_EMAIL
-    new_Message.set_content(text)
+    new_Message.set_content(final_text)
     
     
     
-    files = ['codeitbro-logo.png', 'cat.gif']
     # add images to email
-    files = ['cases.jpeg', 'covid_tests.jpeg']
+    files = ['covid_cases.jpeg', 'covid_tests.jpeg']
     for file in files:
         with open(file, 'rb') as f:
             image_data = f.read()
