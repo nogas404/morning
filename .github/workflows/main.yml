@@ -27,7 +27,7 @@ jobs:
   # runing main python file (it executes other stuff)
   - name: Main part
     env:
-      SENDER_EMAIL: ${{ secret.SENDER_EMAIL }}
-      EMAIL_PASSWORD: ${{ secret.EMAIL_PASSWORD }}
-      RECIVER_EMAIL: ${{ secret.RECIVER_EMAIL }}
+      SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      RECIVER_EMAIL: ${{ secrets.RECIVER_EMAIL }}
     run: python3 main.py
