@@ -23,7 +23,7 @@ jobs:
   # installing dependencies
   - run: pip install -r requirements.txt
   # converting jupyter notebook to python
-  - run: jupyter nbconvert --to python covid-stats.ipynb
+  - run: jupyter nbconvert --to python covid_stats.ipynb
   # runing main python file (it executes other stuff)
   - name: Main part
     env:
