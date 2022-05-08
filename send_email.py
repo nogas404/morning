@@ -7,9 +7,9 @@ def send_email(urls):
     import os
 
     # modify those variables in github actions secrets
-    SENDER_EMAIL = os.getenv['SENDER_EMAIL']
-    SENDER_PASSWORD = os.getenv['SENDER_PASSWORD']
-    RECIVER_EMAIL = os.getenv['RECIVER_EMAIL']
+    SENDER_EMAIL = os.getenv('SENDER_EMAIL')
+    SENDER_PASSWORD = os.getenv('SENDER_PASSWORD')
+    RECIVER_EMAIL = os.getenv('RECIVER_EMAIL')
 
     # making email body
     print(urls)
