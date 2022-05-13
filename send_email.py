@@ -40,11 +40,9 @@ def send_email(urls):
         new_Message.add_attachment(image_data, maintype='image', subtype='jpeg', filename=image_name)
 
     # authenticate and send email
-    from smtplib import SMTP
-    import ssl
-    context=ssl.create_default_context()
-    with SMTP('smtp.mail.yahoo.com', port=587) as smtp:
-        smtp.starttls(context=context)
+    
+    import smtplib, ssl
+    with smtplib.SMTP_SSL('smtp.mail.yahoo.com', port=465) as smtp:
         smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
         smtp.send_message(new_Message)
 

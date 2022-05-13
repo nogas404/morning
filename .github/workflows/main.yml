@@ -1,9 +1,9 @@
-name: Daily script
+name: My script
 
 on: 
   schedule:
   # once every day in 4am UTC
-  - cron:  "0 4 * * *"
+  - cron:  "0 4 */2 * *"
 
 jobs:
  job:
