@@ -3,7 +3,7 @@
 # and big thanks to this guy https://stackoverflow.com/a/58997830
 
 
-def send_email(urls):
+def send_email(urls, files):
     import os
 
     # modify those variables in github actions secrets
@@ -32,19 +32,23 @@ def send_email(urls):
     
     
     # add images to email
-    files = ['covid_cases.jpeg', 'covid_tests.jpeg']
-    for file in files:
-        with open(file, 'rb') as f:
-            image_data = f.read()
-            image_name = f.name
-        new_Message.add_attachment(image_data, maintype='image', subtype='jpeg', filename=image_name)
-
-    # authenticate and send email
+    try:
+        for file in files:
+            with open(file, 'rb') as f:
+                image_data = f.read()
+                image_name = f.name
+            new_Message.add_attachment(image_data, maintype='image', subtype='jpeg', filename=image_name)
+    except Exception as exc:
+        print(f'something wrong with attachemnts - {exc}')
     
-    import smtplib, ssl
-    with smtplib.SMTP_SSL('smtp.mail.yahoo.com', port=465) as smtp:
+    # authenticate and send email
+    import smtplib
+    with smtplib.SMTP('smtp.mail.yahoo.com') as smtp:
+        smtp.starttls()
         smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
         smtp.send_message(new_Message)
+
+
 
 if __name__ == '__main__':
     send_email('hi')
