@@ -1,8 +1,8 @@
 name: My script
 
 on: 
-  schedule:
   # once every day in 4am UTC
+  schedule:
   - cron:  "0 4 */2 * *"
 
 jobs:
@@ -28,6 +28,6 @@ jobs:
   - name: Main part
     env:
       SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
       RECIVER_EMAIL: ${{ secrets.RECIVER_EMAIL }}
     run: python3 main.py
