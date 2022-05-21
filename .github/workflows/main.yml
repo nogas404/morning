@@ -30,4 +30,5 @@ jobs:
       SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
       SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
       RECIVER_EMAIL: ${{ secrets.RECIVER_EMAIL }}
+      OTHER_URLS: ${{ secrets.OTHER_URLS }}
     run: python3 main.py

@@ -1,10 +1,9 @@
-https://grabfreegames.com/rss                                                   # Grab free games
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ	# LastWeekTonight
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRcgy6GzDeccI7dkbbBna3Q	# LEMMiNO
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_7PqixGIdE-jjoHKMPYpGA	# Uwaga! Naukowy Bełkot
 https://www.youtube.com/feeds/videos.xml?channel_id=UCgNg3vwj3xt7QOrcIDaHdFg	# PolyMatter
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q	# Kurzgesagt
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLXo7UDZvByw2ixzpQCufnA	# Vox
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA    # TED-Ed
-https://www.youtube.com/feeds/videos.xml?channel_id=UCxLYtICsUCWdr1YPrj5DtwA    # Ordinary Things
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ    # Philosophy Tube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA    # Contra Points
+https://grabfreegames.com/rss                                                   # Grab free games

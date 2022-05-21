@@ -25,13 +25,17 @@ def get_urls(file_name):
 async def get_feeds(x):
     a = feedparser.parse(x)
     results_feed = []
-    for x in a.entries:
-        entry_time = x.published_parsed
+    
+    for i, x in enumerate(a.entries):
+        if i > 10:
+            pass
+        else:
+            entry_time = x.published_parsed
         
-        # if time of publishing is sonner than of last sync then get results
-        if entry_time > time_of_last_sync:
-            results_feed.append(x['link'])
-            print(x['link'])
+            # if time of publishing is sonner than of last sync then get results
+            if entry_time > time_of_last_sync:
+                results_feed.append(x['link'])
+                print(x['link'])
     
     # return results
     if results_feed is not []:
