@@ -12,6 +12,8 @@ urls = get_urls('rss-feed.txt')
 
 urls += OTHER_URLS
 
+print(urls)
+
 results = asyncio.run(main(urls))
 
 print(results)
