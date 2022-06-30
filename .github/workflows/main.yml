@@ -7,12 +7,12 @@ on:
 
 jobs:
  job:
-  # OS and timeout
+  # OS and timeout ()
   runs-on: ubuntu-latest
   timeout-minutes: 20
 
   steps:
-  # few dependencies or something idk
+  # propably useless, too scared to delete it
   - uses: actions/checkout@v3
   - uses: actions/setup-python@v3
   # using pip cache
@@ -20,8 +20,8 @@ jobs:
       cache: 'pip'
   
 
-  # installing dependencies
-  - run: pip install -r requirements.txt
+  # install dependencies
+  - run: sudo apt-get install -y python3-feedparser python3-numpy python3-pandas python3-matplotlib python3-requests jupyter-notebook jupyter-nbconvert
   # converting jupyter notebook to python
   - run: jupyter nbconvert --to python covid_stats.ipynb
   # runing main python file (it executes other stuff)
