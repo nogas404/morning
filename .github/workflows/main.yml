@@ -19,13 +19,16 @@ jobs:
     with:
       cache: 'pip'
   
+  - name: install dependencies
+    # install dependencies
+    run: pip install -r requirements.txt
 
-  # install dependencies
-  - run: sudo apt-get install -y python3-feedparser python3-numpy python3-pandas python3-matplotlib python3-requests jupyter-notebook jupyter-nbconvert
-  # converting jupyter notebook to python
-  - run: jupyter nbconvert --to python covid_stats.ipynb
+  - name: convert notebook to python 
+    # converting jupyter notebook to python
+    run: jupyter nbconvert --to python covid_stats.ipynb
+
   # runing main python file (it executes other stuff)
-  - name: Main part
+  - name: main part
     env:
       SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
       SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
