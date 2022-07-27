@@ -18,36 +18,36 @@ def send_email(urls, files):
         final_text += f'- {x} \n'
     print(final_text)
 
-
     from email.message import EmailMessage
     from datetime import date
 
     # email formatting
     new_Message = EmailMessage()
-    new_Message['Subject'] = f'Daily Newsletter {date.today().strftime("%d/%m")}'
+    new_Message[
+        'Subject'] = f'Daily Newsletter {date.today().strftime("%d/%m")}'
     new_Message['From'] = SENDER_EMAIL
     new_Message['To'] = RECIVER_EMAIL
     new_Message.set_content(final_text)
-    
-    
-    
+
     # add images to email
     try:
         for file in files:
             with open(file, 'rb') as f:
                 image_data = f.read()
                 image_name = f.name
-            new_Message.add_attachment(image_data, maintype='image', subtype='jpeg', filename=image_name)
+            new_Message.add_attachment(image_data,
+                                       maintype='image',
+                                       subtype='jpeg',
+                                       filename=image_name)
     except Exception as exc:
         print(f'something wrong with attachemnts - {exc}')
-    
+
     # authenticate and send email
     import smtplib
     with smtplib.SMTP('smtp.mail.yahoo.com') as smtp:
         smtp.starttls()
         smtp.login(SENDER_EMAIL, SENDER_PASSWORD)
         smtp.send_message(new_Message)
-
 
 
 if __name__ == '__main__':

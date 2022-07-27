@@ -4,7 +4,8 @@ from send_email import send_email
 
 from get_feed import main, get_urls
 
-import asyncio, os
+import asyncio
+import os
 
 urls = get_urls('rss-feed.txt')
 
