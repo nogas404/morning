@@ -9,5 +9,5 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCr_Q-bPpcw5fJ-Oow1BW1NQ    
 https://www.youtube.com/feeds/videos.xml?channel_id=UCgNg3vwj3xt7QOrcIDaHdFg    # PolyMatter
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6nSFpj9HTCZ5t-N3Rm3-HA    # Vsauce
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2C_jShtL725hvbm1arSV9w    # CGP Grey
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxt2r57cLastdmrReiQJkEg	# Tom Nicholas
 https://grabfreegames.com/rss                                                   # Grab free games
-https://www.icij.org/feed/                                                      # Investigative Journalism
