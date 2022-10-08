@@ -15,6 +15,6 @@ results = asyncio.run(main(urls))
 
 print(results)
 
-files = ['covid_cases.jpeg', 'covid_tests.jpeg']
+files = ['covid_daily.jpeg']
 
 send_email(results, files)

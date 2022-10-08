@@ -24,7 +24,7 @@ def send_email(urls, files):
     # email formatting
     new_Message = EmailMessage()
     new_Message[
-        'Subject'] = f'Daily Newsletter {date.today().strftime("%d/%m")}'
+        'Subject'] = f'Daily Newsletter {date.today().strftime("%d.%m")}'
     new_Message['From'] = SENDER_EMAIL
     new_Message['To'] = RECIVER_EMAIL
     new_Message.set_content(final_text)
