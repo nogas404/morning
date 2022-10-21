@@ -22,4 +22,4 @@ Hannah Ritchie, Edouard Mathieu, Lucas Rodés-Guirao, Cameron Appel, Charlie Gia
 this program is using some packages, you can find all of them in [requirements.txt](requirements.txt)
 
 ### Per package acknowledgements
-each program may also have some link to some sources, I recommend you to check them out, because they are pretty helpful (at least to me)
+each script/program/file may also have links to some resources, I recommend to you to check them out, because they are pretty helpful (at least to me)
