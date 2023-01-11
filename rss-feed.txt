@@ -1,10 +1,8 @@
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRcgy6GzDeccI7dkbbBna3Q	# LEMMiNO
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_7PqixGIdE-jjoHKMPYpGA	# Uwaga! Naukowy Bełkot
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q	# Kurzgesagt
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLXo7UDZvByw2ixzpQCufnA	# Vox
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2PA-AKmVpU6NKCGtZq_rKQ    # Philosophy Tube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA    # Contra Points
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2C_jShtL725hvbm1arSV9w    # CGP Grey
-https://www.youtube.com/feeds/videos.xml?channel_id=UCCehmsLClWwxA_SDLtff6xA    # Copernicus
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBcXA_jyGkSUU6is4xS6S4g	# Wyłącznie Naukowy Bełkot
 https://grabfreegames.com/rss                                                   # Grab free games
-https://www.europeandatajournalism.eu/eng/rss/feed/news-eng                     # EU data journalism

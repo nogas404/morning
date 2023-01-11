@@ -4,7 +4,7 @@ import time
 
 # VARIABLES
 ## in how many hours does your script update
-UPDATE_PERIOD = 25
+UPDATE_PERIOD = 49
 
 # what time was the time of last update
 #                               UNIX TIME       - X hours
