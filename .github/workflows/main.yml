@@ -3,7 +3,7 @@ name: My script
 on: 
   # once every day in 4am UTC
   schedule:
-  - cron:  "0 4 * * */2"
+  - cron:  "0 6 */2 * *"
 
 jobs:
  job:
