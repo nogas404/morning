@@ -6,5 +6,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCNvsIonJdJ5E4EXMa65VYpA    
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2C_jShtL725hvbm1arSV9w    # CGP Grey
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBcXA_jyGkSUU6is4xS6S4g	# Wyłącznie Naukowy Bełkot
 https://www.youtube.com/feeds/videos.xml?channel_id=UCr_Q-bPpcw5fJ-Oow1BW1NQ	# Kraut
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTTZqMWBvLsUYqYwKTdjvkw	# Mateusz Chrobok
 https://grabfreegames.com/rss                                                   # Grab free games
