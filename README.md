@@ -1,25 +1,20 @@
 ## What is it?
-basically it is collection of scripts that shows current COVID-19 data and RSS feed and sends it to email
+basically it is collection of scripts that shows current COVID-19 data and RSS feed, and sends it to email
 
-This script is doing:
-- [showing current cases and share of positive test](covid_stats.ipynb)
-- [checks rss feeds if any new posts](get_feed.py)
-- [sends it to email](send_email.py)
+How it works?
+- [it makes a chart that shows recent COVID-19 data in any EU (+ EEA) country](covid_stats.ipynb)
+- [checks RSS feeds for new entries](get_feed.py)
+- [sends it all to my email](send_email.py)
 
-## I want to use it on my own 
-sure, I'm glad you like it 😄. All you need to do is add few github secrets ([see yaml](.github/workflows/main.yml)), change your country in [notebook](covid_stats.ipynb) and your email provider in [send_email](send_email.py) 
+## How can I use it myself?
+All you need to do is add few github secrets ([see yaml](.github/workflows/main.yml)), change your country in the [notebook](covid_stats.ipynb), and change your email provider in [send_email](send_email.py) 
 
-### bruh why yahoo?
-I have choseen yahoo because you can make account there easly and forget about it until yahoo will eventually shut down lol
-
-Feel free to use however it suits you ☺️
-
-## Acknowledgements
+## Acknowledgments
 ### Data
-Hannah Ritchie, Edouard Mathieu, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Esteban Ortiz-Ospina, Joe Hasell, Bobbie Macdonald, Diana Beltekian and Max Roser (2020) - "Coronavirus Pandemic (COVID-19)". Published online at OurWorldInData.org. Retrieved from: 'https://ourworldindata.org/coronavirus' [Online Resource]
+[this program uses data from ECDC](https://www.ecdc.europa.eu/en/publications-data/data-covid-19-vaccination-eu-eea)
 
 ### Packages
-this program is using some packages, you can find all of them in [requirements.txt](requirements.txt)
+this program is using some 3rd-party packages, you can find all of them in [requirements.txt](requirements.txt). 
 
-### Per package acknowledgements
-each script/program/file may also have links to some resources, I recommend to you to check them out, because they are pretty helpful (at least to me)
+### Per package acknowledgments
+each script/program/file may also have links to some resources.
