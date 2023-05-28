@@ -1,0 +1,1 @@
+https://api.open-meteo.com/v1/forecast?latitude=52.12&longitude=20.85&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation&daily=uv_index_clear_sky_max&forecast_days=3&timezone=Europe%2FBerlin

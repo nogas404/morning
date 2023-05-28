@@ -2,7 +2,7 @@
 *.jpeg
 covid_stats.py
 tmp.py
-
+*.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
