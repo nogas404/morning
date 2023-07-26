@@ -9,6 +9,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCr_Q-bPpcw5fJ-Oow1BW1NQ	# K
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw	# 3blue1brown
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkS_HP3m9NXOgswVAKbMeJQ	# Then & Now
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLxESUhJKJ63L-T7SRN2NtQ	# Kacper Pitala
-https://nitter.hostux.net/GIS_gov/rss						# GIS
+https://nitter.weiler.rocks/GIS_gov/rss						                    # GIS
 https://grabfreegames.com/rss                                                   # Grab free games
-http://etbe.coker.com.au/feed/							# newsletter
+http://etbe.coker.com.au/feed/							                        # newsletter
+https://www.wyjasnie.pl/index.php/feed/                                         # Pozwól, że wyjaśnię
